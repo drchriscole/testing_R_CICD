@@ -15,5 +15,11 @@ jobs:
         with:
           r-version: '4.5.2'
       
+      - name: Install deps
+        run: sudo apt-get install openjdk-25-jdk r-cran-rjava libuv1-dev
+        
+      - name: Java release
+        run: java -version
+ 
       - name: hello-r
-        run: Rscript -e 'print("Hello from R!"); sessionInfo()'
+        run: export JAVA_HOME='/usr/lib/jvm/default-java' && Rscript -e 'print("Hello from R!"); print(Sys.getenv("JAVA_HOME")); sessionInfo()'
