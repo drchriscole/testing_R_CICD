@@ -1,0 +1,12 @@
+Package: testRCICD
+Title: A Simple Test Description File
+Version: 1.0.0
+Authors@R:
+    c(person(given = "Chris",
+             family = "Cole",
+             role = c("aut", "cre"),
+Description: This is a simple package used to test the workflow files.
+Imports: tools
+Suggests: rJava, jsonlite, RWeka, testthat
+License: MIT
+VignetteBuilder: knitr, rmarkdown, quarto
