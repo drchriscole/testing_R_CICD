@@ -16,4 +16,4 @@ jobs:
           r-version: '4.5.2'
       
       - name: hello-r
-        run: Rscript -e 'print("Hello from R!")'
+        run: Rscript -e 'print("Hello from R!"); sessionInfo()'
