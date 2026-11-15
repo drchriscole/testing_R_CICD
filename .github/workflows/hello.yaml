@@ -28,7 +28,7 @@ jobs:
         run: java -version
  
       - name: test-r
-        run: Rscript -e 'testthat::test_file("tests/testthat/test_lib.R", reporter = "fail"); print("Complete")'
+        run: Rscript -e 'testthat::test_file("tests/testthat/test_lib.R", reporter = "check"); print("Complete")'
  
       - name: hello-r
         run: export JAVA_HOME='/usr/lib/jvm/default-java' && Rscript ./myscript.R
